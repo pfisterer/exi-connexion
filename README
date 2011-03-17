@@ -1,0 +1,55 @@
+----------------------------------------
+	CONNEXION
+----------------------------------------
+Data exchange between resource constrained devices is often realized 
+using efficient hand-crafted binary encodings of the transmitted data. 
+On the other hand, information exchange in distributed systems on the 
+Internet is increasingly done using the widespread text-based XML
+format. XML files are simple text files; using them as a means to 
+exchanging data is therefore relatively inefficient in terms of data size 
+and not suitable for devices with limited resources. Currently the W3C is 
+finalizing the EXI standard (http://www.w3.org/XML/EXI/) which promises 
+efficient encoding and compression of XML files. 
+
+Connexion is a BSD-licensed implementation of the W3C EXI standard in the Java 
+programming language. The version implemented by Connexion is currently the 
+Working Draft 26.03.2008 (http://www.w3.org/TR/2008/WD-exi-20080326/). 
+Please note that this is not compatible with the latest draft/specification. 
+Contributions are welcome.
+
+----------------------------------------
+CONTACT
+----------------------------------------
+Any feedback will be greatly appreciated, at the GitHub project page
+(https://github.com/pfisterer/exi-connexion) or by contacting 
+Dennis Pfisterer (exi-connexion__A_T__farberg__de).
+
+----------------------------------------
+INSTALLATION / BUILDING
+----------------------------------------
+No installation is required. To build it, you need Java 6 and 
+Maven (http://maven.apache.org/). 
+
+To build, run "mvn install", this will build it and place the 
+generated jar file in target/ and in your local Maven repository.  
+
+----------------------------------------
+USAGE
+----------------------------------------
+
+	java -jar core/target/exi-connexion-1.0.one-jar.jar --help
+
+----------------------------------------
+LICENSE
+----------------------------------------
+Connexion is licenced under a BSD license. For details, see 
+src/etc/license-header.txt. If you use it for scientific publications, 
+we appreciate if you cite connexion with the following information:
+
+	@techreport{exi-connexion,
+	  author = {Marco Wegner and Dennis Pfisterer},
+	  title = {Connexion - An implementation of the {Efficient XML Interchange (EXI) W3C} Standard},
+	  institution = {Institute of Telematics, University of Luebeck, Germany},
+	  note = {\url{https://github.com/pfisterer/exi-connexion}},
+	  year = {2008}
+	}

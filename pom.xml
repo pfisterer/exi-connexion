@@ -8,7 +8,7 @@
 
 	<name>Connexion - an EXI implementation</name>
 	<groupId>de.uniluebeck.itm.connexion</groupId>
-	<artifactId>exi</artifactId>
+	<artifactId>exi-connexion</artifactId>
 
 	<packaging>jar</packaging>
 	<version>1.0</version>
